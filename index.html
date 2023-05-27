@@ -135,7 +135,15 @@
             return;
         }
 
+         let data = {
+            name: name,
+            email: email,
+            phone: phone
+        }
 
+        tg.sendData(JSON.stringify(data));
+        
+        
         tg.close();
     });
 
